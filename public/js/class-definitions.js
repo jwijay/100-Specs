@@ -399,7 +399,6 @@ function browseURL(browser) {
   }
 }
 
-
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
@@ -410,6 +409,13 @@ function browseURL(browser) {
  *
  */
 
+function listLivingOrgClass () {
+  var result = "";
+  for (var i = 0; i < livingOrganismClassification.length; i ++) {
+    result += "<li>" + livingOrganismClassification[i] + "</li>";
+  }
+  return "<ul>" + result + "</ul>";
+}
 
 /* Step 26
  *
