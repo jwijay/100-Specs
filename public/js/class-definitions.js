@@ -513,6 +513,9 @@ function purchaseLaptop(laptop) {
  *
  */
 
+function canTalkAbout(club) {
+  return club !== club_name;
+}
 
 /* Step 30
  *
