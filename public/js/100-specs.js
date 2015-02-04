@@ -34,7 +34,7 @@ var HundredSpecs = function() {
 	js.mocha.M.describe("SolarSystem Class",$bind(this,this.step32));
 	js.mocha.M.describe("PrincessLeia Class",$bind(this,this.step33));
 	js.mocha.M.describe("Stapler Class",$bind(this,this.step34));
-	js.mocha.M.describe("Scientiest Class",$bind(this,this.step35));
+	js.mocha.M.describe("Scientist Class",$bind(this,this.step35));
 	js.mocha.M.describe("Step 50",$bind(this,this.step50));
 	js.mocha.M.describe("Step 51",$bind(this,this.step51));
 	js.mocha.M.describe("Step 52",$bind(this,this.step52));
