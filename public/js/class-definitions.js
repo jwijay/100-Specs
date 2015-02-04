@@ -586,7 +586,6 @@ Garden.prototype.grow = function() {
   }
 };
 
-
 /* Step 32
  *
  * Define a class named "SolarSystem" with a property
@@ -603,6 +602,18 @@ Garden.prototype.grow = function() {
  *   removePlanet
  *
  */
+
+function SolarSystem() {
+  this.planets = [];
+}
+
+SolarSystem.prototype.addPlanet = function(planet) {
+  this.planets.push(planet);
+};
+
+SolarSystem.prototype.removePlanet = function(planet) {
+  this.planets.splice(this.planets.indexOf(planet), 1);
+};
 
 
 /* Step 33
