@@ -1371,8 +1371,8 @@ var notWarmOrColdAnimal = new Animal('Alien','female').isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle('Honda', 'Civic').drive('Woodlawn Drive');
+var forwardDriving = new Vehicle('Mitsubishi', 'Lancer').drive();
 
 
  /* Step 93
