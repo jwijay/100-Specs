@@ -1382,17 +1382,14 @@ var forwardDriving = new Vehicle('Mitsubishi', 'Lancer').drive();
 var decagon = new Shape(10).getType();
 var polygon = new Shape(20).getType();
 
-
-
 /* Step 94
  *
  * Call the openBox method on two Box instances
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
-
+var openAClosedBox = new Box(null, false).openBox();
+var closeAnOpenBox = new Box(null, true).openBox();
 
  /* Step 95
  *
@@ -1400,9 +1397,8 @@ var closeAnOpenBox;
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
-
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 /* Step 96
  *
