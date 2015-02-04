@@ -1260,6 +1260,14 @@ Box.prototype.openBox = function () {
  *
  */
 
+Door.prototype.openClose = function () {
+  if (this.isOpen) {
+    this.isOpen = false;
+    return false;
+  }
+  this.isOpen = true;
+  return true;
+};
 
 /* Step 86
  *
