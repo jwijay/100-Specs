@@ -1354,17 +1354,16 @@ Meal.prototype.containsJunkFood = function() {
  *
  */
 
-
 /* Step 91
  *
  * Call the isWarmBlooded method on three Animal instances
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
 
+var warmBloodedAnimal = new Animal('Bird','female').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish','female').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Alien','female').isWarmBlooded();
 
 /* Step 92
  *
