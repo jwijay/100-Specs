@@ -615,7 +615,6 @@ SolarSystem.prototype.removePlanet = function(planet) {
   this.planets.splice(this.planets.indexOf(planet), 1);
 };
 
-
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
@@ -649,6 +648,37 @@ SolarSystem.prototype.removePlanet = function(planet) {
  *
  */
 
+function PrincessLeia(name, money, age, gender) {
+  this.isInTrouble = null;
+
+  Person.call(this, name, money, age, gender);
+}
+
+PrincessLeia.prototype = Object.create(Person.prototype, {
+  constructor : {
+    value : Person
+  }
+});
+
+PrincessLeia.prototype.shootsGun = function () {
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly.";
+};
+
+PrincessLeia.prototype.getsInTrouble = function() {
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+};
+
+PrincessLeia.prototype.marries = function (loveInterest) {
+  if (loveInterest === "Han Solo") {
+    return true;
+  }
+  if (loveInterest === "Luke Skywalker") {
+    return "Gross!";
+  }
+  return false;
+};
 
 /* Step 34
  *
