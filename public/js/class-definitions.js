@@ -337,6 +337,9 @@ function addNumbers(num1, num2) {
  *
  */
 
+function installLinux(linuxType) {
+  return linuxFlavors.indexOf(linuxType) !== -1;
+}
 
 /* Step 23
  *
