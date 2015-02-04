@@ -1202,6 +1202,38 @@ Vehicle.prototype.drive = function (streetName) {
  *
  */
 
+Shape.prototype.getType = function () {
+  var type = "";
+  switch (this.sides) {
+    case 3:
+      type = "triangle";
+      break;
+    case 4:
+      type = "quadrilateral";
+      break;
+    case 5:
+      type = "pentagon";
+      break;
+    case 6:
+      type = "hexagon";
+      break;
+    case 7:
+      type = "heptagon";
+      break;
+    case 8:
+      type = "octagon";
+      break;
+    case 9:
+      type = "nonagon";
+      break;
+    case 10:
+      type = "decagon";
+      break;
+    default:
+      type = "Could not determine type";
+  }
+  return type;
+};
 
 /* Step 84
  *
