@@ -1360,7 +1360,6 @@ Meal.prototype.containsJunkFood = function() {
  * and assign the values to each variable below.
  *
  */
-
 var warmBloodedAnimal = new Animal('Bird','female').isWarmBlooded();
 var coldBloodedAnimal = new Animal('Fish','female').isWarmBlooded();
 var notWarmOrColdAnimal = new Animal('Alien','female').isWarmBlooded();
@@ -1374,15 +1373,15 @@ var notWarmOrColdAnimal = new Animal('Alien','female').isWarmBlooded();
 var streetDriving = new Vehicle('Honda', 'Civic').drive('Woodlawn Drive');
 var forwardDriving = new Vehicle('Mitsubishi', 'Lancer').drive();
 
-
  /* Step 93
  *
  * Call the getType method on two Shape instances
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape(20).getType();
+
 
 
 /* Step 94
