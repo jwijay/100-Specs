@@ -1418,7 +1418,6 @@ var blackShoesSize10 = new Shoe(10, 'black').findShoes();
 var farTooTallAStory = new House(7).isATallStory(6);
 var shortStory = new House(1).isATallStory(3);
 
-
  /* Step 98
  *
  * Call the switch method on two Lightbulb instances
@@ -1428,16 +1427,14 @@ var shortStory = new House(1).isATallStory(3);
 var kitchenLightsOn = new Lightbulb(false).flipSwitch("on");
 var porchLightsOff = new Lightbulb(true).flipSwitch();
 
-
  /* Step 99
  *
  * Call the swipedByCookieMonster method on two Cookie instances
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
-
+var cookieMonsterPwns = new Cookie("chocolate").swipedByCookieMonster("Monday");
+var cookieMonsterBlocked = new Cookie("chocolate").swipedByCookieMonster("Tuesday");
 
  /* Step 100
  *
