@@ -1111,7 +1111,7 @@ HundredSpecs.prototype = {
 	,step82: function() {
 		js.mocha.M.it("drive should be a function.",function() {
 			var myVehicle = new Vehicle('Toyota', 'FJ Cruiser');
-			js.expect.E.expect(Vehicle.drive).to.be.a("function");
+			js.expect.E.expect(myVehicle.drive).to.be.a("function");
 		});
 		js.mocha.M.it("should return 'Driving on {streetName}' if param is a string and not empty",function() {
 			var cruiser = new Vehicle('Toyota', 'FJ Cruiser');
@@ -1202,7 +1202,7 @@ HundredSpecs.prototype = {
 	,step88: function() {
 		js.mocha.M.it("flipSwitch should be a function.",function() {
 			var myLightbulb = new Lightbulb(false);
-			js.expect.E.expect(myLightBulb.flipSwitch).to.be.a("function");
+			js.expect.E.expect(myLightbulb.flipSwitch).to.be.a("function");
 		});
 		js.mocha.M.it("should flip the switch on if 'on' is passed in as a param.",function() {
 			var light = new Lightbulb(false);

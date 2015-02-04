@@ -586,6 +586,8 @@ Garden.prototype.grow = function() {
   if (this.isWatered) {
     this.plantsTotal++;
     this.isWatered = false;
+  } else {
+    return false;
   }
 };
 
