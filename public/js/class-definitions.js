@@ -1098,9 +1098,8 @@ function Meal (foods) {
  * Steps 60-80 (each variable is a 'step')
  */
 
-
 // Create 2 different species of animals
-var george;
+var george = new Animal('Monkey','male');
 var nemo;
 
 // Create 2 different vehicles
