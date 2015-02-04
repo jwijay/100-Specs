@@ -293,7 +293,7 @@ var beers = {
   Heffeweisen : "German",
   Stout : ["Thick", "Dark"],
   Porter : "Bitter",
-  Ale : ["Light", "Golder"]
+  Ale : ["Light", "Golden"]
 };
 
 /* Step 20
@@ -358,6 +358,24 @@ function installLinux(linuxType) {
  * @return {Bool when False, String when True}
  *
  */
+
+function drink(beerType) {
+  result = false;
+
+  if (beers[beerType] !== undefined) {
+    result = "This " + beerType + " is ";
+    if (beers[beerType] instanceof(Array)) {
+      beers[beerType].map(function(curr, index, arr) {
+        result += curr + " and ";
+      });
+      result = result.slice(0,-5);
+    } else {
+      result += beers[beerType];
+    }
+    result += ".";
+  }
+  return result;
+}
 
 
 /* Step 24
