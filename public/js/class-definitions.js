@@ -390,6 +390,15 @@ function drink(beerType) {
  *
  */
 
+function browseURL(browser) {
+  if (browsers[browser] === undefined) {
+    console.log("HALP. That browser does not exist.");
+    return false;
+  } else {
+    return browsers[browser];
+  }
+}
+
 
 /* Step 25
  *
