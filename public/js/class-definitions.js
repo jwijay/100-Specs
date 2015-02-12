@@ -1014,7 +1014,11 @@ function Vehicle (make, model) {
  */
 
 function Shape (sides) {
-  this.sides = sides;
+  if (sides > 3) {
+    this.sides = sides;
+  } else {
+    console.log("HALP! Please pass in a number > 3 to create a valid Shape object.");
+  }
 }
 
 /**
